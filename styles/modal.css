@@ -1,5 +1,5 @@
 .modal-wrapper {
-    background-color: var(--color-grey-1-opacity-5) ;
+    background-color: var(--color-grey-1-opacity-5);
     position: absolute;
     top: 0;
     left: 0;
@@ -103,6 +103,14 @@
     color: var(--color-grey-2);
     border: 1px solid var(--color-grey-5);
     border-radius: var(--radius-1);
+}
+
+.modal-content form .value-types input:hover{
+    border-color: var(--color-brand-1);
+}
+
+.modal-content form .value-types input:focus{
+    border-color: var(--color-brand-1);
 }
 
 .modal-content form .btns-wrapper {

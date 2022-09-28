@@ -33,3 +33,9 @@ header nav button {
    font-weight: var(--font-weight-1);
    padding: 0 0.875rem 0 0.875rem;
 }
+
+header nav button:hover {
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border-color: var(--color-brand-1);
+}

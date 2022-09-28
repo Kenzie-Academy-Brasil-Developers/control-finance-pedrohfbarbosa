@@ -33,77 +33,28 @@
                 Resumo financeiro
             </h2>
             <ul>
-                <li><button>Todos</button></li>
-                <li><button>Entradas</button></li>
-                <li><button>Saidas</button></li>
+                <li><button id="btn-all">Todos</button></li>
+                <li><button id="btn-entries">Entradas</button></li>
+                <li><button id="btn-exit">Saidas</button></li>
             </ul>
         </section>
         <section class="section-cards">
             <div class="sum-values">
-                <h3>
-                    Soma dos valores
+                <h3 id="sum-title">                    
                 </h3>
                 <span id="sum">
-                    R$2.120,00
                 </span>
             </div>
             <ul class="cards-wrapper">
-                <li class="card">
-                    <span id="item-value">R$ 40,00</span>
-                    <div>
-                        <span>Entrada</span>
-                        <button class="delete-card">                            
-                            <img src="../../assets/img/trash.svg" alt="">
-                        </button>
-                    </div>
-                </li>
-                <li class="card">
-                    <span id="item-value">R$ 40,00</span>
-                    <div>
-                        <span>Entrada</span>
-                        <button class="delete-card">                            
-                            <img src="../../assets/img/trash.svg" alt="">
-                        </button>
-                    </div>
-                </li>
+                <div class="empty-cards">
+                    <h3>Nenhum valor cadastrado</h3>
+                    <span>Registrar novo valor</span>
+                </div>
             </ul>
         </section>
-    </main>
-    <div class="modal-wrapper">
-        <div class="modal">
-            <div class="modal-header">
-                <h3>
-                    Registro de valor
-                </h3>
-                <button data-control-modal="close-modal">
-                    x
-                </button>
-            </div>
-            <div class="modal-content">
-                <h3>
-                    Digite o valor e em seguida aperte no botao referente ao tipo de valor
-                </h3>
-                <form class="insert-value">
-                    <div class="input-wrapper">
-                        <label for="entry-value">Valor</label>
-                        <input type="number" id="entry-value" placeholder="R$ 00,00">
-                    </div>
-                    <div class="value-types" id="value-type">
-                        <h4>Tipo de valor</h4>
-                        <input type="button" name="valor" id="btn_0" value="Entrada">
-                        <input type="button" name="valor" id="btn_1" value="Saida">
-                    </div>
-                    <div class="btns-wrapper">
-                        <button data-control-modal="close-modal">Cancelar</button>
-                        <button type="submit">Inserir valor</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <script src="../../scripts/modal.js"></script>
+    </main>    
     <script src="./valuesData.js"></script>
-    <script src="./index.js"></script>
+    <script src="../../scripts/modal.js"></script>
+    <script src="./index.js"></script>    
 </body>
-
 </html>
