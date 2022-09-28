@@ -1,0 +1,33 @@
+.section-filters {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section-filters h2 {
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
+}
+
+.section-filters ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.section-filters ul li button {
+    padding: 0 0.875rem 0 0.875rem;
+    height: 2rem;
+    border-radius: var(--radius-1);
+    border: 1px solid transparent;
+    background-color: var(--color-grey-5);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-2);
+}
+
+.section-filters ul li button:hover {
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border-color: var(--color-brand-1);
+}

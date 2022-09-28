@@ -43,16 +43,65 @@
 
 body {
   font-family: var(--font-family-1);
+  width: 100vw;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
   max-width: 43rem;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   .container {
     max-width: 43rem;
-    margin: 0 1rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header {
+    align-items: center;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main .section-filters {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .modal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal {
+    max-width: 26.75rem;
+  }
+
+  #value-type {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .modal-wrapper .modal .modal-content form .btns-wrapper {
+    justify-content: flex-end;
+  }
+
+  .modal-wrapper .modal .modal-content form .btns-wrapper button {
+    width: fit-content;
   }
 }
