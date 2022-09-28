@@ -48,7 +48,7 @@ function createCard(item){
     
     btnDeleteImg.addEventListener("click", function(event){
         cont -= item.value
-        sumValues.innerHTML = `R$ ${cont}`
+        sumValues.innerHTML = `R$ ${cont.toFixed(2)}`
 
         cardId = Number(btnDeleteImg.id.substring(7))
         cardIndex = insertedValues.findIndex((element) => element.id == cardId)
